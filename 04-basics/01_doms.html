@@ -1,0 +1,80 @@
+<!-- DOM = Document Object Model -->
+<!-- Simple words mein: DOM ek aisa system hai jo HTML page ko JavaScript ke liye ek object/tree structure mein convert karta hai, jisse JavaScript HTML ke elements ko access, change, add, ya delete kar sakti hai. 
+ DOM
+│
+├── document
+│
+├── SELECT
+│   ├── getElementById()
+│   ├── getElementsByClassName()
+│   ├── getElementsByTagName()
+│   ├── querySelector()
+│   └── querySelectorAll()
+│
+├── CONTENT
+│   ├── textContent
+│   ├── innerText
+│   └── innerHTML
+│
+├── ATTRIBUTE
+│   ├── getAttribute()
+│   ├── setAttribute()
+│   └── removeAttribute()
+│
+├── CLASS
+│   └── classList
+│       ├── add()
+│       ├── remove()
+│       ├── toggle()
+│       └── contains()
+│
+├── STYLE
+│   └── element.style
+│
+├── CREATE
+│   ├── createElement()
+│   ├── append()
+│   └── appendChild()
+│
+├── REMOVE
+│   └── remove()
+│
+├── TRAVERSAL
+│   ├── parentElement
+│   ├── children
+│   ├── firstElementChild
+│   ├── lastElementChild
+│   └── nextElementSibling
+│
+└── EVENTS
+    ├── addEventListener()
+    ├── click
+    ├── input
+    ├── submit
+    ├── keydown
+    ├── keyup
+    ├── bubbling
+    ├── capturing
+    └── delegation
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM LEARNING</title>
+    <style> /* CSS application ke liye use style tag */
+        .bg-black{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body class="bg-black">
+    <div>
+        <h1 id = "title" class="heading">DOM LEARNING</h1>
+        <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+    </div>  
+</body>
+</html>
