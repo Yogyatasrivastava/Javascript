@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script> // js 
+const div = document.createElement('div')  // create element 
+console.log(div);
+// element ke liye class name, id, attribute, style, innerText set karna basically these are properties of element
+div.className = "main"  
+div.id = Math.round(Math.random()*10 + 1)
+div.setAttribute('title','this is a div')
+div.style.backgroundColor = "black"
+div.style.color = "white"
+div.style.padding = "10px"
+div.innerText = "this is a div"
+// append means add all these things in body of html page , web page me show karna
+document.body.appendChild(div)  
+
+
+</script>
+</html>

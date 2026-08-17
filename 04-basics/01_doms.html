@@ -73,8 +73,80 @@
 </head>
 <body class="bg-black">
     <div>
-        <h1 id = "title" class="heading">DOM LEARNING</h1>
+        <h1 id = "title" class="heading">DOM LEARNING <span style = "display: none;">(Hidden text)</span></h1>
+        <h3>Document Object Model</h3>
+        <h3>Document Object </h3>
         <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+        <ul>
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+        </ul>
     </div>  
 </body>
 </html>
+<!-- DOM LEARNING 
+ document.getElementById('title')
+<h1 id=​"title" class=​"test heading">​DOM LEARNING​</h1>​
+document.getElementById('title').id
+'title'
+document.getElementById('title').className // className property se class ka naam milta hai 
+'heading'
+document.getElementById('title').getAttribute('class')
+'heading'
+document.getElementById('title').setAttribute('class','test heading')
+undefined
+document.getElementById('title')
+<h1 id=​"title" class=​"test heading">​DOM LEARNING​</h1>​
+const title = document.getElementById('title')
+undefined
+
+title
+<h1 id=​"title" class=​"test heading" style=​"background-color:​ blue;​ border-radius:​ 15px;​">​DOM LEARNING​</h1>​
+
+title.style.backgroundColor = 'blue'
+'blue'
+title.style.borderRadius = "15px"
+'15px'
+title
+<h1 id=​"title" class=​"test heading" style=​"background-color:​ blue;​ border-radius:​ 15px;​">​DOM LEARNING​</h1>​
+title.te
+undefined
+
+title.textContent   // textContent property se h1 ke andar ka text milta hai
+'DOM LEARNING (Hidden text)'
+title.innerHTML  // innerHTML property se h1 ke andar ka text milta hai, aur agar h1 ke andar koi HTML tag ho to wo bhi return karega
+'DOM LEARNING (<span style="display: none;">(Hidden text)</span>)'
+title.innerText     // only visible text ko return karta hai
+'DOM LEARNING'
+
+QUEARYSELECTOR // ek method hai jo CSS selector ke through element ko select karta hai, aur sirf first match element ko return karta hai
+
+document.querySelector('ul')
+<ul>​…​</ul>​
+const sel = document.querySelector('ul')
+undefined
+sel.querySelector('li')
+<li style=​"background-color:​ blue;​">​…​</li>​
+const turnGreen = sel.querySelector('li')
+undefined
+turnGreen.style.backgroundColor = 'blue'
+'blue'
+document.querySelectorAll('li') // node list aa jayga isme 
+
+In JavaScript DOM, these three — HTMLCollection, NodeList, and Array — look similar, but they are different.
+1 html collection 
+2 nodelist
+3  array 
+
+And you can convert a NodeList/HTMLCollection into an Array:
+const arr = Array.from(items);
+
+
+
+
+
+
+
+
+-->
